@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiBaseUrl: 'https://animes-api-hj.herokuapp.com',
+  apiBaseUrl: 'https://animes-api-hj.herokuapp.com/',
 };
 
 /*

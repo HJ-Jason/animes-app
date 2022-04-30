@@ -6,7 +6,7 @@ import { environment } from 'src/environments/environment';
 
 @Injectable()
 export class AnimeService {
-  private readonly animePath: string = '/animes';
+  private readonly animePath: string = 'animes';
 
   constructor(private _http: HttpClient) {}
 
