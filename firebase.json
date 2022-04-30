@@ -1,6 +1,10 @@
 {
   "hosting": {
-    "public": "src",
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+    "public": "dist/animes-app",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
   }
 }
