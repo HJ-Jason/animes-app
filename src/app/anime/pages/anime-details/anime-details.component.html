@@ -1,0 +1,27 @@
+<p>anime-details works!</p>
+
+<mat-card class="example-card" *ngIf="anime$ | async; let anime">
+  <mat-card-header>
+    <mat-card-title
+      >{{ anime.title | titlecase }}
+      {{ anime.author | uppercase }}</mat-card-title
+    >
+  </mat-card-header>
+
+  <mat-card-content>
+    <ul>
+      <li><b>Type :</b> {{ anime.type }}</li>
+      <li><b>Date de parution :</b> {{ anime.releaseDate }}</li>
+    </ul>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="warn" (click)="deleteAnime(anime.id)">
+      Supprimer
+    </button>
+    <button mat-raised-button color="primary" (click)="updateAnime(anime)">
+      Modifier
+    </button>
+  </mat-card-actions>
+</mat-card>
+
+<button mat-raised-button color="warn" (click)="goBack()">Retour</button>
